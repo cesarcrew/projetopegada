@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Calculadora de Pegada de Carbono</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels"></script>
+</head>
+<body>
+  <div class="container">
+    <h1>Calculadora de Pegada de Carbono</h1>
+    <p>Informe o consumo da sua máquina de lavar:</p>
+
+    <label for="energia">Energia (kWh)</label>
+    <input type="number" id="energia" placeholder="Energia (kWh)" />
+    
+    <label for="agua">Água (litros)</label>
+    <input type="number" id="agua" placeholder="Água (litros)" />
+    
+    <button onclick="calcularPegada()">Calcular Pegada de Carbono</button>
+
+    <div id="resultado"></div>
+    <canvas id="grafico" width="400" height="400"></canvas>
+  </div>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
